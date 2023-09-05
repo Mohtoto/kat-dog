@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+:root{
+
+    --primary-color: #6C3E2E;
+    --seconday-color:#880ED3;
+    --third-color:#93C98C;
+    --main-headers-font: Arial, Helvetica, sans-serif;  
+    --sub-headers-font: 'Roboto', sans-serif;
+   
+}
+
+h1{
+    color: var(--primary-color);
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body{
+
+    /* background: whitesmoke; */
+    font-family: var(--main-headers-font);
+
+    
+}
+
+.container {
+    padding: 100px 0;
+  }
+  
+
+/* Nav */
+
+
+#nav{
+
+    background-color: rgb(235, 232, 232);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.09);
+    z-index: 999;
+
+}
+.navbar{
+
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+   
+    padding: 18px;
+
+    
+}
+
+.navbar img {
+
+    width: 100px;
+    object-fit: contain;
+  
+
+}
+
+.main__list{
+    gap: 80px;
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    color: var(--primary-color);
+    font-family:Arial, Helvetica, sans-serif;   
+    
+
+}
+
+/* Home page */
+
+
+
+.main__image--wrapper .main__img{
+
+    width: 100%;
+    object-fit: contain;
+    height: 500px;
+    
+}
+.main__image--wrapper{
+
+    position: relative;
+    
+}
+
+.main__image--wrapper h2{
+
+    position: absolute;
+  top: 80%; /* Position text vertically in the middle */
+  left: 10%; /* Position text horizontally in the middle */
+  /* Center text precisely */
+  background-color: rgb(223, 112, 199); /* Add a semi-transparent background */
+  color: white; /* Text color */
+  padding: 12px 20px; /* Add padding for better readability */
+  font-size: 16px; /* Adjust text size as needed */
+  border-radius: 12px;
+    
+}
+
+.main_page_info{
+
+    margin-top: 40px ;
+    color: var(--primary-color);
+    font-size: 24px;
+    
+    
+}
+
+.main_page_info h1{
+
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: var(--main-headers-font);
+    font-size: 30px;
+
+}
+
+.main_page_info h2 {
+
+    text-align: center;
+   
+    text-transform: uppercase;
+    font-family: var(--sub-headers-font);
+}
+
+.divider {
+    border: none;
+    border-top: 2px solid var(--seconday-color); /* Change the color to your preferred divider color */
+    margin: 20px 0; /* Adjust spacing as needed */
+   
+  }
+
+.icons{
+    padding: 40px;
+    color: var(--primary-color);
+   
+}
+
+
+.icon-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+
+}
+
+.icon-wrapper img{
+
+    width: 50px;
+    
+}
+
+
+  
+
+
+
