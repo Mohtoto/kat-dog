@@ -19,6 +19,7 @@ h1{
 }
 html {
     scroll-behavior: smooth;
+    
   }
   
 *{
@@ -34,8 +35,23 @@ body{
 
     /* background: whitesmoke; */
     font-family: var(--main-headers-font);
-
+    height: 100vh;
+        
     
+}
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+#footer{
+
+    background-color: rgb(235, 232, 232);
+ 
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.09);
+  
 }
 
 .container {
@@ -57,6 +73,8 @@ body{
     z-index: 999;
 
 }
+
+
 .navbar{
 
     width: 100%;
@@ -172,6 +190,19 @@ body{
 
     width: 50px;
     
+}
+
+/* footer */
+
+
+footer{
+
+    background-color: rgb(235, 232, 232);
+   
+    width: 100%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.09);
+  
+
 }
 
 
