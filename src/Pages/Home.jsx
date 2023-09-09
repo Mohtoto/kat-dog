@@ -5,12 +5,14 @@ import home from "../assets/icons/home.png";
 import food from "../assets/icons/food.png";
 import dog from "../assets/icons/dog.png";
 import sub_img from "../assets/Photos/2.png";
-import LandingPage from "./LandingPage";
+import LandingPage from "../Components/LandingPage";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
     <>
         <LandingPage />
+       
        
     </>
   );

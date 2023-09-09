@@ -14,6 +14,15 @@
    
 }
 
+label{
+
+    color: #6C3E2E;
+}
+
+span{
+
+    color: red;
+}
 h1{
     color: var(--primary-color);
 }
@@ -35,7 +44,7 @@ body{
 
     /* background: whitesmoke; */
     font-family: var(--main-headers-font);
-    height: 100vh;
+    min-height: 100vh;
         
     
 }
@@ -64,13 +73,11 @@ body{
 
 #nav{
 
-    background-color: rgb(235, 232, 232);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.09);
-    z-index: 999;
+    /* background-color: rgb(235, 232, 232);
+    
+    width: 100%; */
+    /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.09); */
+    /* z-index: 999; */
 
 }
 

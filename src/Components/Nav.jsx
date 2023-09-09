@@ -6,8 +6,8 @@ const Nav = () => {
   const location = useLocation();
 
   return (
-    <section id="nav">
-      <nav className="navbar">
+    <nav className="shadow-md">
+      <div className="navbar">
         <Link to="/">
           <img src={logo} />
         </Link>
@@ -34,7 +34,7 @@ const Nav = () => {
           </li>
           <li>
             <Link
-              to="/"
+              to="/Gallery"
               className={
                 location.pathname === "/Gallery" ? "text-[#880ED3]" : ""
               }
@@ -44,7 +44,7 @@ const Nav = () => {
           </li>
           <li>
             <Link
-              to="/"
+              to="/EnquiryForm"
               className={
                 location.pathname === "/EnquiryForm" ? "text-[#880ED3]" : ""
               }
@@ -63,8 +63,8 @@ const Nav = () => {
             </Link>
           </li>
         </ul>
-      </nav>
-    </section>
+      </div>
+    </nav>
   );
 };
 
