@@ -80,4 +80,6 @@ const gallery = [
   image25,
 ];
 
+
+
 export { howDidWeComeAbout , gallery };

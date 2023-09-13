@@ -6,6 +6,7 @@ import Footer from "./Components/Footer";
 import Gallery from "./Pages/Gallery";
 import EnquiryForm from "./Pages/EnquiryForm";
 import ContactUs from "./Pages/ContactUs";
+import ConfirmationPage from "./Pages/ConfirmationPage";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="Gallery" element={<Gallery />} />
             <Route path="EnquiryForm" element={<EnquiryForm />} />
             <Route path="Contactus" element={<ContactUs />} />
+            <Route path="ConfirmationPage" element={<ConfirmationPage />} />
           </Routes>
         </div>
       </div>
