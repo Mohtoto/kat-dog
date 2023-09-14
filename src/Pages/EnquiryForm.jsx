@@ -10,26 +10,12 @@ const EnquiryForm = () => {
     formState: { errors },
   } = useForm();
 
-  // const onSubmit = async (e) => {
-
-  //   e.preventDefault()
-  //   setSent(true)
-  // };
 
   const inputStyles = `mb-5 w-full rounded-lg bg-primary-300
   px-5 py-3 placeholder-grey placeholder:opacity-50`;
 
   return (
-    <>
-      {sent ? (
-        <ConfirmationPage />
-      ) : (
-      <form
-
-    
-      method="POST"
-      action="https://formsubmit.co/mohtotonchy@gmail.com"
-    >
+    <form method="POST" action="https://formsubmit.co/mohtotonchy@gmail.com">
       <div className="row">
         <div className="flex items-center gap-7 mt-16  ">
           <div className="relative flex mr-[30px]">
@@ -59,7 +45,6 @@ const EnquiryForm = () => {
                   className={inputStyles}
                   placeholder="Full Name..."
                   {...register("Full Name", { required: true, maxLength: 100 })}
-                
                 />
               </div>
               <div className="w-[250px]">
@@ -70,8 +55,10 @@ const EnquiryForm = () => {
                   type="text"
                   className={inputStyles}
                   placeholder="0421302339"
-                  {...register("Contact Number", { required: true, maxLength: 100 })}
-                
+                  {...register("Contact Number", {
+                    required: true,
+                    maxLength: 100,
+                  })}
                 />
               </div>
               <div className="w-[250px]">
@@ -82,7 +69,10 @@ const EnquiryForm = () => {
                   type="text"
                   className={inputStyles}
                   placeholder="sallym@gamil.com"
-                  {...register("Email Address", { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i, })}
+                  {...register("Email Address", {
+                    required: true,
+                    pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                  })}
                 />
               </div>
               <div className="w-[250px]">
@@ -103,13 +93,23 @@ const EnquiryForm = () => {
                 <label>
                   Pet Name? <span>*️</span>
                 </label>
-                <input type="text" className={inputStyles} placeholder="Max" {...register("Pet Name", { required: true, maxLength: 100 })} />
+                <input
+                  type="text"
+                  className={inputStyles}
+                  placeholder="Max"
+                  {...register("Pet Name", { required: true, maxLength: 100 })}
+                />
               </div>
               <div className="w-[250px]">
                 <label>
                   Pet Age? <span>*️</span>
                 </label>
-                <input type="text" className={inputStyles} placeholder="2"  {...register("Pet Age", { required: true, maxLength: 100 })}/>
+                <input
+                  type="text"
+                  className={inputStyles}
+                  placeholder="2"
+                  {...register("Pet Age", { required: true, maxLength: 100 })}
+                />
               </div>
               <div className="w-[250px]">
                 <label>
@@ -144,7 +144,10 @@ const EnquiryForm = () => {
                   type="text"
                   className={inputStyles}
                   placeholder="04/12/2023 to 12/12/2023"
-                  {...register("Required Dates", { required: true, maxLength: 100 })}
+                  {...register("Required Dates", {
+                    required: true,
+                    maxLength: 100,
+                  })}
                 />
               </div>
               <div className="w-[250px]">
@@ -176,7 +179,10 @@ const EnquiryForm = () => {
                   type="text"
                   className={inputStyles}
                   placeholder="Type here..."
-                  {...register("list services", { required: true, maxLength: 100 })}
+                  {...register("list services", {
+                    required: true,
+                    maxLength: 100,
+                  })}
                 />
               </div>
             </div>
@@ -186,25 +192,35 @@ const EnquiryForm = () => {
                 Please attach a photo of your pet here.. <span>*️</span>
               </h1>
               <div class="mb-4">
-
-              <input type="file" name="attachment" accept="image/png, image/jpeg" />
+                <input
+                  type="file"
+                  name="attachment"
+                  accept="image/png, image/jpeg"
+                />
               </div>
               <button
                 type="submit"
                 className=" w-full bg-[#6C3E2E] hover:bg-brown-700 text-white font-bold py-2 px-4 rounded"
                 // onClick={() => setSent(!sent)}
               >
-               submit
+                submit
               </button>
             </div>
-            </div>
+          </div>
         </div>
       </div>
       <input type="hidden" name="_template" value="table"></input>
-      {/* <input type="hidden" name="_next" value="http://localhost:5173/ConfirmationPage"></input> */}
+      <input
+        type="hidden"
+        name="_next"
+        value="http://localhost:5173/ConfirmationPage"
+      ></input>
+      <input
+        type="hidden"
+        name="_redirect"
+        value="http://localhost:5173/ConfirmationPage"
+      />
     </form>
-      )}
-    </>
   );
 };
 
