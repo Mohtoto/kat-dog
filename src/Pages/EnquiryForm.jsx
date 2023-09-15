@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { PhotoIcon, UserCircleIcon } from "@heroicons/react/24/solid";
 import { useForm } from "react-hook-form";
-import ConfirmationPage from "./ConfirmationPage";
 const EnquiryForm = () => {
   const [sent, setSent] = useState(false);
   const {

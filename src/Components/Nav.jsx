@@ -54,12 +54,12 @@ const Nav = () => {
           </li>
           <li>
             <Link
-              to="/"
+              to="/Contactus"
               className={
                 location.pathname === "/Contactus" ? "text-[#880ED3]" : ""
               }
             >
-              Contact Us
+              Contact & FAQs
             </Link>
           </li>
         </ul>

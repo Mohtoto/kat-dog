@@ -165,6 +165,14 @@ body{
 
 }
 
+.input-bottom-border {
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-radius: 0 !important;
+    border-bottom-width: 2px !important;
+  }
+
 .main_page_info h2 {
 
     text-align: center;
@@ -175,7 +183,7 @@ body{
 
 .divider {
     border: none;
-    border-top: 2px solid var(--seconday-color); /* Change the color to your preferred divider color */
+    border-top: 4px solid var(--primary-color); /* Change the color to your preferred divider color */
     margin: 20px 0; /* Adjust spacing as needed */
    
   }
