@@ -1,69 +1,148 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/Logo/trans.png";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { SlClose } from "react-icons/sl";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 const Nav = () => {
   const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isAboveMediumScreens = useMediaQuery("(min-width : 1060px)");
 
   return (
     <nav className="shadow-md">
-      <div className="navbar">
+     
+      <div className="w-full max-w-[1200px] flex items-center m-auto p-[18px]">
         <Link to="/">
-          <img src={logo} />
+          <img src={logo} alt="Logo" className="w-[100px] object-contain" />
         </Link>
+        {isAboveMediumScreens ? (
+          <ul className="main__list ">
+            <li>
+              <Link
+                to="/"
+                className={location.pathname === "/" ? "text-[#880ED3]" : ""}
+              >
+                Home
+              </Link>
+            </li>
 
-        <ul className="main__list">
-          <li>
-            <Link
-              to="/"
-              className={location.pathname === "/" ? "text-[#880ED3]" : ""}
-            >
-              Home
-            </Link>
-          </li>
+            <li>
+              <Link
+                to="/aboutus"
+                className={
+                  location.pathname === "/aboutus" ? "text-[#880ED3]" : ""
+                }
+              >
+                About Us
+              </Link>
+            </li>
 
-          <li>
-            <Link
-              to="/aboutus"
-              className={
-                location.pathname === "/aboutus" ? "text-[#880ED3]" : ""
-              }
-            >
-              About Us
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/Gallery"
-              className={
-                location.pathname === "/Gallery" ? "text-[#880ED3]" : ""
-              }
-            >
-              Gallery
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/EnquiryForm"
-              className={
-                location.pathname === "/EnquiryForm" ? "text-[#880ED3]" : ""
-              }
-            >
-              Enquiry Form
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/Contactus"
-              className={
-                location.pathname === "/Contactus" ? "text-[#880ED3]" : ""
-              }
-            >
-              Contact & FAQs
-            </Link>
-          </li>
-        </ul>
+            <li>
+              <Link
+                to="/Gallery"
+                className={
+                  location.pathname === "/Gallery" ? "text-[#880ED3]" : ""
+                }
+              >
+                Gallery
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/EnquiryForm"
+                className={
+                  location.pathname === "/EnquiryForm" ? "text-[#880ED3]" : ""
+                }
+              >
+                Enquiry Form
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/Contactus"
+                className={
+                  location.pathname === "/Contactus" ? "text-[#880ED3]" : ""
+                }
+              >
+                Contact & FAQs
+              </Link>
+            </li>
+          </ul>
+        ) : (
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <GiHamburgerMenu className="h-6 w-6 text-black absolute right-4 top-8" />
+          </button>
+        )}
       </div>
+
+      {isMenuOpen && (
+        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-slate-500 drop-shadow-xl ">
+          <div className="flex justify-end p-12 ">
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              <SlClose className="h-6 w-6 text-white" />
+            </button>
+          </div>
+
+          <ul>
+            <li>
+              <Link
+                to="/"
+                className={location.pathname === "/" ? "text-[#880ED3]" : ""}
+              >
+                Home
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/aboutus"
+                className={
+                  location.pathname === "/aboutus" ? "text-[#880ED3]" : ""
+                }
+              >
+                About Us
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/Gallery"
+                className={
+                  location.pathname === "/Gallery" ? "text-[#880ED3]" : ""
+                }
+              >
+                Gallery
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/EnquiryForm"
+                className={
+                  location.pathname === "/EnquiryForm" ? "text-[#880ED3]" : ""
+                }
+              >
+                Enquiry Form
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/Contactus"
+                className={
+                  location.pathname === "/Contactus" ? "text-[#880ED3]" : ""
+                }
+              >
+                Contact & FAQs
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };

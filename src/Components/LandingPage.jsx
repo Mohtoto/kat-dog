@@ -10,21 +10,21 @@ import sub_img from "../assets/Photos/2.png";
 
 const LandingPage = () => {
   return (
-    <section className='row'>
-      <div className="container">
+    <section className='row p-8'>
+      <div className="md:container">
         <div className="main__image--wrapper">
-          <img src={main_img} className="main__img" />
-          <h2>Woofs, Walks & Talks</h2>
+          <img src={main_img} className=" object-contain" />
+          <h2 className=' absolute top-[60%] left-[2px] text-white px-[8px] py-[8px] text-[12px] rounded-xl'>Woofs, Walks & Talks</h2>
         </div>
 
         <div className="main_page_info">
-          <h1>Trusted and reliable service in your area!</h1>
+          <h1 className='text-[20px]'>Trusted and reliable service in your area!</h1>
           <h2>Services offered</h2>
         </div>
         <div class="divider"></div>
 
         <div className="flex flex-col items-center">
-          <div className="icons flex items-center gap-[200px] ml-8">
+          <div className="icons flex flex-col items-center gap-4 ml-8  ">
             <div className="icons-left">
               <div className="icon-wrapper">
                 <img src={walk} />
@@ -64,11 +64,12 @@ const LandingPage = () => {
             <h1 className="uppercase text-xl">testimonials</h1>
           </div>
         </div>
+        {/* <div class="divider"></div> */}
         <div class="divider"></div>
 
         {/* testonminals */}
-        <div className="w-full flex mt-12 items-center justify-evenly">
-          <div className=" w-1/2 mr-12 flex flex-col items-center gap-4">
+        <div className="w-full flex flex-col  mt-12 items-center ">
+          <div className="text-[12px] text-center mr-12 flex flex-col items-center gap-4">
             <p>
               “Kat has proven to be extremely reliable and trustworthy when it
               comes to referring new clients to her that I do not have the
@@ -105,8 +106,10 @@ const LandingPage = () => {
               enough!” - Samantha, Buddy’s mum
             </p>
           </div>
-          <div className="border-l-[3px] border-[#6C3E2E] h-[700px] mt-5"></div>
-          <div className=" w-1/2 ml-12 flex flex-col items-center gap-4">
+          {/* <div className="border-l-[3px] border-[#6C3E2E] h-[700px] mt-5"></div> */}
+          <div class="divider"></div>
+
+          <div className=" text-[12px] text-center ml-12 flex flex-col items-center gap-4">
             <p>
               “Kat has walked my boys since starting her business. They looked
               forward to their walk every day. When our old boy slowed down, she

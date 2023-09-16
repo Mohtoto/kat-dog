@@ -135,23 +135,16 @@ body{
 
 .main__image--wrapper h2{
 
-    position: absolute;
-  top: 80%; /* Position text vertically in the middle */
-  left: 10%; /* Position text horizontally in the middle */
-  /* Center text precisely */
+ 
   background-color: rgb(223, 112, 199); /* Add a semi-transparent background */
-  color: white; /* Text color */
-  padding: 12px 20px; /* Add padding for better readability */
-  font-size: 16px; /* Adjust text size as needed */
-  border-radius: 12px;
-    
+ 
 }
 
 .main_page_info{
 
     margin-top: 40px ;
     color: var(--primary-color);
-    font-size: 24px;
+   
     
     
 }
@@ -161,7 +154,7 @@ body{
     margin-bottom: 60px;
     text-align: center;
     font-family: var(--main-headers-font);
-    font-size: 30px;
+  
 
 }
 

@@ -7,7 +7,7 @@ import { BsInstagram } from "react-icons/bs";
 const Footer = () => {
   return (
     <footer>
-      <div className="flex items-center justify-between p-12  text-[#880ED3] row">
+      <div className="flex items-center justify-between p-12  text-[#880ED3] row hidden">
         <div className="flex items-center justify-between gap-12">
           <h2>CopyRight @2023 Kat&Dog</h2>
           <h2>Privacy Policy</h2>
