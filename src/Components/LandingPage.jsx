@@ -69,7 +69,7 @@ const LandingPage = () => {
 
         {/* testonminals */}
         <div className="w-full flex flex-col  mt-12 items-center ">
-          <div className="text-[12px] text-center mr-12 flex flex-col items-center gap-4">
+          <div className="text-[12px] text-left md:mr-12 flex flex-col items-center gap-4">
             <p>
               “Kat has proven to be extremely reliable and trustworthy when it
               comes to referring new clients to her that I do not have the
@@ -109,7 +109,7 @@ const LandingPage = () => {
           {/* <div className="border-l-[3px] border-[#6C3E2E] h-[700px] mt-5"></div> */}
           <div class="divider"></div>
 
-          <div className=" text-[12px] text-center ml-12 flex flex-col items-center gap-4">
+          <div className=" text-[12px] text-left md:ml-12 flex flex-col items-center gap-4">
             <p>
               “Kat has walked my boys since starting her business. They looked
               forward to their walk every day. When our old boy slowed down, she
