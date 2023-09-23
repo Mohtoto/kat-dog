@@ -8,10 +8,12 @@ import EnquiryForm from "./Pages/EnquiryForm";
 import ContactUs from "./Pages/ContactUs";
 import ConfirmationPage from "./Pages/ConfirmationPage";
 
+
 const App = () => {
   return (
     <Router>
         <Nav />
+       
       <div className="flex flex-col">
         <div className="min-h-[calc(100vh-81px-168px)]">
           <Routes>

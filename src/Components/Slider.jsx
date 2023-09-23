@@ -38,7 +38,7 @@ const Slider = () => {
             </h2>
 
             <p className="mt-4 text-[#6C3E2E]">
-              Checkout what our customers think about us
+              Swipe to checkout what our customers think about us
             </p>
 
             <div className="hidden lg:mt-8 lg:flex lg:gap-4 keen-slider">
