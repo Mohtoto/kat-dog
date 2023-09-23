@@ -40,8 +40,8 @@ const ContactUs = () => {
   px-5 py-3 placeholder-grey placeholder:opacity-50`;
   return (
     <main className="w-full">
-      <section className="flex">
-        <div className="w-1/2 flex items-center justify-center">
+      <section className="flex flex-col md:flex-row">
+        <div className="md:w-1/2 flex items-center justify-center">
           <div className="flex flex-col items-center">
             <div className="flex items-center gap-7 mt-[50px]">
               <div className="relative flex mr-[30px]">
@@ -55,13 +55,13 @@ const ContactUs = () => {
             <img src={img} className="mt-8 object-contain w-[250px]" />
           </div>
 
-          <div className="border-l-[3px] border-[#6C3E2E] h-[500px] mt-20 ml-[200px]"></div>
+          <div className="border-l-[3px] border-[#6C3E2E] h-[500px] mt-20 ml-[200px] hidden md:flex"></div>
         </div>
 
         {/* Second section */}
-        <div className="w-1/2">
-          <div class="border-t-[3px] border-[#6C3E2E] mt-20 w-[80%] "></div>
-          <div className="flex items-start gap-[100px]">
+        <div className="md:w-1/2 flex flex-col items-center">
+          <div class="border-t-[3px] border-[#6C3E2E] mt-20 w-[80%] hidden md:flex"></div>
+          <div className="flex md:items-start gap-[100px] flex-col md:flex-row">
             <form
               method="POST"
               action="https://formsubmit.co/mohtotonchy@gmail.com"
@@ -121,16 +121,16 @@ const ContactUs = () => {
               />
             </form>
 
-            <div className="flex flex-col mt-16 gap-2">
+            <div className="flex flex-col items-center md:items-start mt-16 gap-2">
               <div className="flex flex-col gap-2">
-                <h1>Contact</h1>
-                <p className="text-sm text-[#9d8c86]">
+                <h1 className="text-center md:text-left">Contact</h1>
+                <p className="text-sm text-[#9d8c86] text-center">
                   katanddog.walking@outlook.com
                 </p>
               </div>
               <div className="flex flex-col gap-2">
-                <h1>Phone Number</h1>
-                <p className="text-sm text-[#9d8c86]">0449995528</p>
+                <h1 className="text-center">Phone Number</h1>
+                <p className="text-sm text-[#9d8c86] text-center md:text-left" >0449995528</p>
               </div>
             </div>
           </div>

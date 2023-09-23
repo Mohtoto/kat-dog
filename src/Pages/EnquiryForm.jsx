@@ -15,15 +15,15 @@ const EnquiryForm = () => {
   return (
     <form method="POST" action="https://formsubmit.co/mohtotonchy@gmail.com">
       <div className="row">
-        <div className="flex items-center gap-7 mt-16  ">
-          <div className="relative flex mr-[30px]">
+        <div className="flex items-center gap-7 mt-16 ml-[40px] md:justify-start sm:p-8 ">
+          <div className="relative flex md:mr-[30px]">
             <div className=" absolute -left-8 transform rotate-[60deg] opacity-50 w-14 h-16 bg-opacity-12 backdrop-blur-lg bg-[#93C98C] rounded-2xl"></div>
             <div className="opacity-50 w-14 h-16 bg-opacity-12 backdrop-blur-lg bg-[#93C98C] rounded-2xl"></div>
             <div className="absolute transform rotate-[50deg] -right-8 opacity-50 w-14 h-16 bg-opacity-12 backdrop-blur-lg bg-[#93C98C] rounded-2xl"></div>
           </div>
           <div>
-            <h1 className="text-[20px]">BOOKING FORM</h1>
-            <h2 className="text-[#6C3E2E]">
+            <h1 className="text-[18px]">BOOKING FORM</h1>
+            <h2 className="text-[#6C3E2E] text-[12px] md:text-[20px]">
               Please provide the following information to make a booking via
               email.
             </h2>
@@ -33,7 +33,7 @@ const EnquiryForm = () => {
         {/*  inputs */}
         <div class="container">
           <div class="flex flex-wrap gap-8">
-            <div className="flex items-center justify-evenly w-full">
+            <div className="flex flex-col items-center justify-evenly w-full md:flex-row">
               <div className="w-[250px]">
                 <label>
                   Your Name: <span>*️</span>
@@ -86,7 +86,7 @@ const EnquiryForm = () => {
               </div>
             </div>
             {/*  second row inputs  */}
-            <div className="flex items-center justify-evenly w-full">
+            <div className="flex flex-col items-center justify-evenly w-full md:flex-row">
               <div className="w-[250px]">
                 <label>
                   Pet Name? <span>*️</span>
@@ -133,7 +133,7 @@ const EnquiryForm = () => {
               </div>
             </div>
 
-            <div className="flex items-center justify-evenly w-full ">
+            <div className="flex items-center justify-evenly w-full flex-col md:flex-row">
               <div className="w-[250px]">
                 <label>
                   Required Dates? <span>*️</span>
@@ -185,7 +185,7 @@ const EnquiryForm = () => {
               </div>
             </div>
 
-            <div className="w-full ml-8">
+            <div className="w-full p-4 md:ml-8">
               <h1>
                 Please attach a photo of your pet here.. <span>*️</span>
               </h1>

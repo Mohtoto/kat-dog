@@ -80,14 +80,14 @@ const Nav = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-slate-500 drop-shadow-xl ">
+        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-[whitesmoke] drop-shadow-xl ">
           <div className="flex justify-end p-12 ">
             <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-              <SlClose className="h-6 w-6 text-white" />
+              <SlClose className="h-6 w-6 text-black" />
             </button>
           </div>
 
-          <ul>
+          <ul className="flex flex-col absolute top-1/2 left-1/2 transfom -translate-x-1/2 -translate-y-1/2 gap-12 text-center">
             <li>
               <Link
                 to="/"
