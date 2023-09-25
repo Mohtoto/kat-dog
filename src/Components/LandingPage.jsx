@@ -25,6 +25,8 @@ const LandingPage = () => {
 
   return (
     <section className='row p-8'>
+
+      <h1>hello</h1>
       <div className="md:container">
         <div className="main__image--wrapper">
           <img src={main_img} className=" object-contain" />
