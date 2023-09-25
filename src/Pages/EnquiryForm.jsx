@@ -15,18 +15,9 @@ const EnquiryForm = () => {
   px-5 py-3 placeholder-grey placeholder:opacity-50`;
 
 
-  const handleSubmit= () => {
-
-    // e.preventDefault()
-
-    
-    setSent(true)
-   
-  }
-
   return (
    
-    <form onSubmit={handleSubmit}  method="POST" action="https://formsubmit.co/mohtotonchy@gmail.com" enctype="multipart/form-data">
+    <form method="POST" action="https://formsubmit.co/mohtotonchy@gmail.com" enctype="multipart/form-data">
       <div className="row">
         <div className="flex items-center gap-7 mt-16 ml-[40px] md:justify-start sm:p-8 ">
           <div className="relative flex md:mr-[30px]">
@@ -46,7 +37,7 @@ const EnquiryForm = () => {
         {/*  inputs */}
         <div className="container">
           <div className="flex flex-wrap gap-8">
-            <div className="flex flex-col items-center justify-evenly w-full md:flex-row">
+            <div className="flex flex-col items-center justify-evenly w-full md:flex-row p-3 gap-3">
               <div className="w-[250px]">
                 <label>
                   Your Name: <span>*️</span>
@@ -99,7 +90,7 @@ const EnquiryForm = () => {
               </div>
             </div>
             {/*  second row inputs  */}
-            <div className="flex flex-col items-center justify-evenly w-full md:flex-row">
+            <div className="flex flex-col items-center justify-evenly w-full md:flex-row p-3 gap-3">
               <div className="w-[250px]">
                 <label>
                   Pet Name? <span>*️</span>
@@ -146,7 +137,7 @@ const EnquiryForm = () => {
               </div>
             </div>
 
-            <div className="flex items-center justify-evenly w-full flex-col md:flex-row">
+            <div className="flex items-center justify-evenly w-full flex-col md:flex-row p-3 gap-3">
               <div className="w-[250px]">
                 <label>
                   Required Dates? <span>*️</span>

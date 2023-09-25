@@ -68,7 +68,7 @@ const Aboutus = () => {
     
 
           
-        <div className="flex flex-col items-center mt-[50px] p-5 ">
+        <div className="flex flex-col items-center mt-[50px] md:mt-2 p-5 ">
           <h1 className=" font-bold text-[40px] text-black mr-8 text-center">2022</h1>
           <div className="flex flex-col  justify-center gap-8 mt-7 lg:flex-row ">
          
