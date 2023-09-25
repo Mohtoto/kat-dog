@@ -15,9 +15,9 @@ const EnquiryForm = () => {
   px-5 py-3 placeholder-grey placeholder:opacity-50`;
 
 
-  const handleSubmit= (e) => {
+  const handleSubmit= () => {
 
-    e.preventDefault()
+    // e.preventDefault()
 
     
     setSent(true)
@@ -25,8 +25,7 @@ const EnquiryForm = () => {
   }
 
   return (
-    <>
-    {sent ? (<ConfirmationPage />) : (
+   
     <form onSubmit={handleSubmit} method="POST" action="https://formsubmit.co/mohtotonchy@gmail.com">
       <div className="row">
         <div className="flex items-center gap-7 mt-16 ml-[40px] md:justify-start sm:p-8 ">
@@ -213,7 +212,7 @@ const EnquiryForm = () => {
               <button
                 type="submit"
                 className=" w-full bg-[#6C3E2E] hover:bg-brown-700 text-white font-bold py-2 px-4 rounded"
-                // onClick={() => setSent(!sent)}
+               
               >
                 submit
               </button>
@@ -222,19 +221,18 @@ const EnquiryForm = () => {
         </div>
       </div>
       <input type="hidden" name="_template" value="table"></input>
-      {/* <input
+      <input
         type="hidden"
         name="_next"
-        value="http://localhost:5173/ConfirmationPage"
+        value="https://katanddog.com.au/ConfirmationPage"
       ></input>
       <input
         type="hidden"
         name="_redirect"
-        value="http://localhost:5173/ConfirmationPage"
-      /> */}
+        value="https://katanddog.com.au/ConfirmationPage"
+      />
     </form>
-    )}
-    </>
+   
   );
 };
 
