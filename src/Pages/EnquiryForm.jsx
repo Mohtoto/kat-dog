@@ -26,7 +26,7 @@ const EnquiryForm = () => {
 
   return (
    
-    <form onSubmit={handleSubmit} method="POST" action="https://formsubmit.co/mohtotonchy@gmail.com">
+    <form onSubmit={handleSubmit}  method="POST" action="https://formsubmit.co/mohtotonchy@gmail.com" enctype="multipart/form-data">
       <div className="row">
         <div className="flex items-center gap-7 mt-16 ml-[40px] md:justify-start sm:p-8 ">
           <div className="relative flex md:mr-[30px]">
