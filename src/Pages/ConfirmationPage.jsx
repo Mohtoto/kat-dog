@@ -2,6 +2,8 @@ import React from "react";
 import { IoIosArrowBack } from 'react-icons/io'
 import { Link } from "react-router-dom";
 const ConfirmationPage = () => {
+
+
   return (
     <section className="w-full m-auto max-w-7xl">
       <div className="row">
@@ -15,6 +17,8 @@ const ConfirmationPage = () => {
                   Thank you for getting in touch.We will get back to you as soon
                   as we can
                 </p>
+
+               
               </div>
             </div>
           </div>

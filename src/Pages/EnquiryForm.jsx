@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import ConfirmationPage from "./ConfirmationPage";
 const EnquiryForm = () => {
   const [sent, setSent] = useState(false);
+  const [data, setData] = useState([]);
   const {
     register,
     trigger,
@@ -12,8 +14,20 @@ const EnquiryForm = () => {
   const inputStyles = `mb-5 w-full rounded-lg bg-primary-300
   px-5 py-3 placeholder-grey placeholder:opacity-50`;
 
+
+  const handleSubmit= (e) => {
+
+    e.preventDefault()
+
+    
+    setSent(true)
+   
+  }
+
   return (
-    <form method="POST" action="https://formsubmit.co/mohtotonchy@gmail.com">
+    <>
+    {sent ? (<ConfirmationPage />) : (
+    <form onSubmit={handleSubmit} method="POST" action="https://formsubmit.co/mohtotonchy@gmail.com">
       <div className="row">
         <div className="flex items-center gap-7 mt-16 ml-[40px] md:justify-start sm:p-8 ">
           <div className="relative flex md:mr-[30px]">
@@ -31,8 +45,8 @@ const EnquiryForm = () => {
         </div>
 
         {/*  inputs */}
-        <div class="container">
-          <div class="flex flex-wrap gap-8">
+        <div className="container">
+          <div className="flex flex-wrap gap-8">
             <div className="flex flex-col items-center justify-evenly w-full md:flex-row">
               <div className="w-[250px]">
                 <label>
@@ -189,7 +203,7 @@ const EnquiryForm = () => {
               <h1>
                 Please attach a photo of your pet here.. <span>*️</span>
               </h1>
-              <div class="mb-4">
+              <div className="mb-4">
                 <input
                   type="file"
                   name="attachment"
@@ -208,17 +222,19 @@ const EnquiryForm = () => {
         </div>
       </div>
       <input type="hidden" name="_template" value="table"></input>
-      <input
+      {/* <input
         type="hidden"
         name="_next"
-        value="https://katanddog.com.au/ConfirmationPage"
+        value="http://localhost:5173/ConfirmationPage"
       ></input>
       <input
         type="hidden"
         name="_redirect"
-        value="https://katanddog.com.au/ConfirmationPage"
-      />
+        value="http://localhost:5173/ConfirmationPage"
+      /> */}
     </form>
+    )}
+    </>
   );
 };
 

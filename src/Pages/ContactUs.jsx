@@ -112,12 +112,12 @@ const ContactUs = () => {
               <input
                 type="hidden"
                 name="_next"
-                value="http://localhost:5173/ConfirmationPage"
+                value="https://katanddog.com.au/ConfirmationPage"
               ></input>
               <input
                 type="hidden"
                 name="_redirect"
-                value="http://localhost:5173/ConfirmationPage"
+                value="https://katanddog.com.au/ConfirmationPage"
               />
             </form>
 
