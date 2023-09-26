@@ -83,7 +83,7 @@ const gallery = [
 const testimonials = [
 
   {
-    paragraphBig: "Kat has proven to be extremely reliable and trustworthy when it comes to referring new clients to her that I do not have the capacity to take on or to assist me while I have been away onleave. She is a true professional and you can clearly see that she has a real passion for what she does highly recommend",
+    paragraphBig: "Kat has proven to be extremely reliable and trustworthy when it comes to referring new clients to her that I do not have the capacity to take on or to assist me while I have been away onleave. She is a true professional and you can clearly see that she has a real passion for what she does highly recommend.",
     paragraphSmall:"Lauren,Marely & Me Pet Services"
 
   },
@@ -107,7 +107,7 @@ const testimonials = [
     paragraphSmall:"Emma, Duke & Dez’s mum"
   },
   {
-    paragraphBig: "We engaged Kat after seeing her recommendation on a neighbourhood forum. When we first met, I was amazed at how professional she was. Kat arrived on time with police checks and references ready, notes on terms and conditions relating to the welfare of our dog and a list of available dates and times. Kat has changed our one-year-old dog into a more settled boy. She is so conscious of creating wonderful experiences for him which she documents daily for us. We trust her completely and feel so fortunate to have found her. I cannot recommend her more highly..",
+    paragraphBig: "We engaged Kat after seeing her recommendation on a neighbourhood forum. When we first met, I was amazed at how professional she was. Kat arrived on time with police checks and references ready, notes on terms and conditions relating to the welfare of our dog and a list of available dates and times. Kat has changed our one-year-old dog into a more settled boy. She is so conscious of creating wonderful experiences for him which she documents daily for us. We trust her completely and feel so fortunate to have found her. I cannot recommend her more highly.",
     paragraphSmall:"Helen, Fletchers mum"
   },
   

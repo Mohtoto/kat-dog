@@ -40,7 +40,7 @@ const Aboutus = () => {
               drive. For me, like most others, job stability was not a want but
               a must, however I knew if I wanted to make my dream a reality, I
               would have to step out of my comfort zone. With a sense of
-              determination, I was not only wiling, but wanting to risk it all-
+              determination, I was not only wiling, but wanting to risk it all
               in the name of dogs!
             </p>
             <p>

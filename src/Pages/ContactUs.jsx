@@ -2,6 +2,7 @@ import React from "react";
 import img from "../assets/Photos/get.png";
 import { useForm } from "react-hook-form";
 import { Container, Title, Accordion, createStyles, rem } from "@mantine/core";
+import ConfirmationPageNew from "./ConfirmationPageNew ";
 
 const placeholder = "hello";
 const useStyles = createStyles((theme) => ({
@@ -34,7 +35,7 @@ const ContactUs = () => {
     formState: { errors },
   } = useForm();
 
- 
+
 
   const inputStyles = `mb-5 w-full rounded-lg bg-primary-300
   px-5 py-3 placeholder-grey placeholder:opacity-50`;
@@ -61,6 +62,8 @@ const ContactUs = () => {
         {/* Second section */}
         <div className="lg:w-1/2 flex flex-col items-center">
           <div className="flex lg:items-start gap-[100px] flex-col lg:flex-row">
+
+      
             <form
               method="POST"
               action="https://formsubmit.co/mohtotonchy@gmail.com"
@@ -103,7 +106,7 @@ const ContactUs = () => {
               <button
                 type="submit"
                 className=" uppercase w-[350px] bg-[#6C3E2E] hover:bg-brown-700 text-white font-bold py-3 px-4 rounded-lg"
-                // onClick={() => setSent(!sent)}
+                
               >
                 submit
               </button>
@@ -111,14 +114,15 @@ const ContactUs = () => {
               <input
                 type="hidden"
                 name="_next"
-                value="https://katanddog.com.au/ConfirmationPage"
+                value="https://katanddog.com.au/confirmationPagesubmitted"
               ></input>
               <input
                 type="hidden"
                 name="_redirect"
-                value="https://katanddog.com.au/ConfirmationPage"
+                value="https://katanddog.com.au/confirmationPagesubmitted"
               />
             </form>
+     
 
             <div className="flex flex-col items-center lg:items-start mt-16 gap-2">
               <div className="flex flex-col gap-2">

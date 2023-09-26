@@ -7,6 +7,7 @@ import Gallery from "./Pages/Gallery";
 import EnquiryForm from "./Pages/EnquiryForm";
 import ContactUs from "./Pages/ContactUs";
 import ConfirmationPage from "./Pages/ConfirmationPage";
+import ConfirmationPageNew from "./Pages/ConfirmationPageNew ";
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="EnquiryForm" element={<EnquiryForm />} />
             <Route path="Contactus" element={<ContactUs />} />
             <Route path="ConfirmationPage" element={<ConfirmationPage />} />
+            <Route path="confirmationPagesubmitted" element={<ConfirmationPageNew />} />
           </Routes>
         </div>
       </div>
