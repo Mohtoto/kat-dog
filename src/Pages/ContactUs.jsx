@@ -66,7 +66,7 @@ const ContactUs = () => {
       
             <form
               method="POST"
-              action="https://formsubmit.co/mohtotonchy@gmail.com"
+              action="https://formsubmit.co/katanddog.walking@outlook.com"
               className="mt-[50px]"
             >
               <div className="w-[350px]">
