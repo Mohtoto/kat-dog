@@ -1,9 +1,6 @@
 🐾 Pet Grooming Booking System
 A React-based booking system designed to simplify pet grooming appointments for clients. This application features an intuitive interface with form validation, ensuring a seamless scheduling experience.
 
-<!-- Add a screenshot or demo link -->
-
-![ecom](https://github.com/user-attachments/assets/1bdc4539-08fa-4fd9-9b59-94a95e495409)
 
 🌟 Features
 Easy Appointment Booking: Clients can select available time slots and provide pet details.
@@ -26,7 +23,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/pet-grooming-booking-system.git
+git clone https://github.com/your-username/kat-dog.git
 Navigate to the project directory:
 
 bash
@@ -61,12 +58,11 @@ Open a pull request.
 Distributed under the MIT License. See LICENSE for more information.
 
 🌐 Links
-Demo: Live Demo
-Repository: GitHub Repository
+Demo: [https://kat&dog](http://katanddog.com.au/)
 📧 Contact
 Have questions? Reach out to me:
 
-Email: your.email@example.com
+Email: mohammad.totonchy@outlook.com
 LinkedIn: Your Profile
 Happy coding! 😊
 
